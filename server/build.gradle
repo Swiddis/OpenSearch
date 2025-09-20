@@ -28,6 +28,7 @@
  * under the License.
  */
 
+import com.google.protobuf.gradle.ProtobufExtract
 import org.opensearch.gradle.info.BuildParams
 
 plugins {
@@ -139,8 +140,8 @@ tasks.withType(JavaCompile).configureEach {
 }
 
 compileJava {
-  options.compilerArgs += ['-processor', ['org.apache.logging.log4j.core.config.plugins.processor.PluginProcessor',
-    'org.opensearch.common.annotation.processor.ApiAnnotationProcessor'].join(',')]
+  options.compilerArgs += ['-processor', ['org.opensearch.common.annotation.processor.ApiAnnotationProcessor'].join(',')]
+  options.incremental = true
 }
 
 tasks.named("internalClusterTest").configure {
@@ -227,6 +228,10 @@ protobuf {
       }
     }
   }
+}
+
+tasks.withType(ProtobufExtract).all {
+  it.outputs.cacheIf { true }
 }
 
 tasks.named("processResources").configure {

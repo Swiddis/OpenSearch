@@ -47,7 +47,7 @@ import org.opensearch.core.common.Strings;
  *
  * @opensearch.internal
  */
-@Plugin(category = PatternConverter.CATEGORY, name = "OpenSearchMessageField")
+//@Plugin(category = PatternConverter.CATEGORY, name = "OpenSearchMessageField")
 @ConverterKeys({ "OpenSearchMessageField" })
 public final class OpenSearchMessageFieldConverter extends LogEventPatternConverter {
 

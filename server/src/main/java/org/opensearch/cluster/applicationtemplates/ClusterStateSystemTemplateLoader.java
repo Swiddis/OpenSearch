@@ -53,6 +53,7 @@ public class ClusterStateSystemTemplateLoader implements SystemTemplateLoader {
             .metadata()
             .componentTemplates()
             .get(template.templateMetadata().fullyQualifiedName());
+        logger.debug("no-op11111111111111111111111111111111");
 
         if (existingTemplate != null
             && !SystemTemplateMetadata.COMPONENT_TEMPLATE_TYPE.equals(

@@ -56,7 +56,7 @@ import static org.opensearch.common.logging.DeprecatedMessage.X_OPAQUE_ID_FIELD_
  *
  * @opensearch.internal
  */
-@Plugin(name = "RateLimitingFilter", category = Node.CATEGORY, elementType = Filter.ELEMENT_TYPE)
+//@Plugin(name = "RateLimitingFilter", category = Node.CATEGORY, elementType = Filter.ELEMENT_TYPE)
 public class RateLimitingFilter extends AbstractFilter {
 
     private final Set<String> lruKeyCache = Collections.newSetFromMap(Collections.synchronizedMap(new LinkedHashMap<String, Boolean>() {

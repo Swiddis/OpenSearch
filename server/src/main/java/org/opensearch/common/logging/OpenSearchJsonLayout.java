@@ -91,7 +91,7 @@ import java.util.stream.Stream;
  *
  * @opensearch.internal
  */
-@Plugin(name = "OpenSearchJsonLayout", category = Node.CATEGORY, elementType = Layout.ELEMENT_TYPE, printObject = true)
+//@Plugin(name = "OpenSearchJsonLayout", category = Node.CATEGORY, elementType = Layout.ELEMENT_TYPE, printObject = true)
 public class OpenSearchJsonLayout extends AbstractStringLayout {
 
     private final PatternLayout patternLayout;

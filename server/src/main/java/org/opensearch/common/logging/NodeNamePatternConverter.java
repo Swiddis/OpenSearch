@@ -49,7 +49,7 @@ import java.util.Arrays;
  *
  * @opensearch.internal
  */
-@Plugin(category = PatternConverter.CATEGORY, name = "NodeNamePatternConverter")
+//@Plugin(category = PatternConverter.CATEGORY, name = "NodeNamePatternConverter")
 @ConverterKeys({ "node_name" })
 public final class NodeNamePatternConverter extends LogEventPatternConverter {
     /**

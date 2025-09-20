@@ -53,7 +53,7 @@ import java.util.StringJoiner;
  *
  * @opensearch.internal
  */
-@Plugin(name = "JsonThrowablePatternConverter", category = PatternConverter.CATEGORY)
+//@Plugin(name = "JsonThrowablePatternConverter", category = PatternConverter.CATEGORY)
 @ConverterKeys({ "exceptionAsJson" })
 public final class JsonThrowablePatternConverter extends ThrowablePatternConverter {
     private final ExtendedThrowablePatternConverter throwablePatternConverter;

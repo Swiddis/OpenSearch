@@ -48,7 +48,7 @@ import org.apache.logging.log4j.message.Message;
  *
  * @opensearch.internal
  */
-@Plugin(name = "HeaderWarningAppender", category = Core.CATEGORY_NAME, elementType = Appender.ELEMENT_TYPE)
+//@Plugin(name = "HeaderWarningAppender", category = Core.CATEGORY_NAME, elementType = Appender.ELEMENT_TYPE)
 public class HeaderWarningAppender extends AbstractAppender {
     public HeaderWarningAppender(String name, Filter filter) {
         super(name, filter, null);
